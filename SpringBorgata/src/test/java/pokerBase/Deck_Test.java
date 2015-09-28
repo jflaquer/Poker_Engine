@@ -31,7 +31,8 @@ public class Deck_Test {
 		//	I put this test in so it would pass...
 		//TODO: Code a unit test to make sure calling the deck constructor passes back 52 cards in a deeck.
 		
-		assertTrue(1==1);
+		Deck myTest = new Deck ();
+		assertTrue (myTest.getTotalCards () == 52);
 	}
 
 }

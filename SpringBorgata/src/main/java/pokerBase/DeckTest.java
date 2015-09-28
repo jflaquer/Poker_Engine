@@ -1,3 +1,5 @@
+//This Class is how we were testing our Deck and our Hand.
+
 package pokerBase;
 
 import static org.junit.Assert.*;
@@ -11,7 +13,7 @@ import pokerEnums.eSuit;
 
 public class DeckTest {
 
-	@Test
+	
 	public void test() {
 		Deck myTest = new Deck ();
 		assertTrue (myTest.getTotalCards () == 52);
@@ -30,8 +32,8 @@ public class DeckTest {
 		myHand.AddCardToHand(myCard4);
 		myHand.AddCardToHand(myCard5);
 		ArrayList<Card> testHand = myHand.getCards();
-		ArrayList<Card> straight = myHand.getBestHand();
-		assertTrue(testHand==straight);
+		ArrayList<Card> Straight = myHand.getBestHand();
+		assertTrue(testHand==Straight);
 	}
 
 }
